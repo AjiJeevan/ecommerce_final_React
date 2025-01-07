@@ -8,7 +8,7 @@ import Col from 'react-bootstrap/esm/Col'
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import ProductNotFound from './ProductNotFound';
-import Product from '../components/product';
+import Product from '../components/Product';
 import { useNavigate } from 'react-router-dom';
 
 function SearchProducts() {
