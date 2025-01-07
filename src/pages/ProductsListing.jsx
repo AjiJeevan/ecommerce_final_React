@@ -14,13 +14,16 @@ function ProductsListing() {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    axios.get(api_url)
-    .then(res =>{
-      setProducts(res.data)
-    })
-    .catch(err =>{
-      console.log(" Failed to connect API ")
-    })
+    const fetchData = async () => {  
+      await axios.get(api_url)
+      .then(res =>{
+        setProducts(res.data)
+      })
+      .catch(err =>{
+        console.log(" Failed to connect API ")
+      })
+    }
+    fetchData()
   }, []);
 
 

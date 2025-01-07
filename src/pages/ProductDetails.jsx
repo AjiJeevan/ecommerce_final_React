@@ -15,7 +15,8 @@ function ProductDetails() {
     let { productId } = useParams();
 
     useEffect(() =>{
-        axios.get(api_url+productId)
+      const fetchData = async () => {
+        await axios.get(api_url+productId)
         .then(res =>{
             setProduct(res.data)
             console.log(res.data)
@@ -23,6 +24,8 @@ function ProductDetails() {
         .catch(err =>{
             console.log(" Failed to connect API ")
         })
+      }
+      fetchData();
     },[])
 
   return (

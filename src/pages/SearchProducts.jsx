@@ -20,6 +20,7 @@ function SearchProducts() {
     let { searchName } = useParams();
 
     useEffect(() => {
+      const fetchData = async () => {
         axios.get(api_url)
         .then(res =>{
         //   setProducts(res.data)
@@ -44,6 +45,8 @@ function SearchProducts() {
           console.log(" Failed to connect API ")
           setFound(false)
         })
+      }
+      fetchData()
       }, [searchName]);
 
       if(isFound){
