@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ProductsListing from './pages/ProductsListing'
 import ProductDetails from './pages/ProductDetails';
-import SearchProducts from './pages/searchProducts.jsx';
+import SearchProducts from './pages/SearchProducts.jsx'
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Root from "./routes/root.jsx"
 import ProductNotFound from './pages/ProductNotFound.jsx';
