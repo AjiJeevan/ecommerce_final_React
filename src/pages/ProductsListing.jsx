@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import Container from 'react-bootstrap/Container';
-import Product from '../components/product';
+import Product from '../components/Product';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import Row from 'react-bootstrap/Row';
